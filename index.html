@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Kumari Portfolio </title>
+    <script src="https://kit.fontawesome.com/2fdfeffac2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="scroll-progress-container">
+        <div class="scroll-indicator"></div>
+    </div>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p data-aos="fade-right" data-aos-delay="200">UI/UX Designer</p>
+                <h1 data-aos="fade-right" data-aos-delay="400">Hi, I'm <span class="text-animate">Muskan</span> <br> Kumari From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <img src="images/background1.jpg" alt="Profile Image">
+                </div>
+                <div class="about-col-2"  data-aos="fade-left">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Muskan Kumari, a passionate Full Stack MERN Developer and Full Stack Android Developer with hands-on experience in building dynamic and user-friendly web applications. Currently pursuing a B.Tech at Swami Vivekanand Institute of Engineering & Technology, I have a strong foundation in Data Structures and Algorithms, with proficiency in languages like C++, Java, and Python.</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                                <div class="progress-bar"><div class="progress" data-width="90"></div></div>
+                            </li>
+                            <li><span>App Development</span><br>
+                                <div class="progress-bar"><div class="progress" data-width="85"></div></div>
+                            </li>
+                            <li><span>UI/UX Design</span><br>
+                                <div class="progress-bar"><div class="progress" data-width="80"></div></div>
+                            </li>
+                            <li><span>MERN Stack</span><br>
+                                <div class="progress-bar"><div class="progress" data-width="75"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web and App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.Tech in Computer Science</li>
+                            <li><span>2022</span><br>12TH From BSEB, Bihar</li>
+                            <li><span>2020</span><br>10TH from State Board JAC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-down">My Services</h1>
+            <div class="services-list">
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>This service provides clients with efficient and attractive designs for responsive websites that engage users effectively.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating intuitive, user-friendly interfaces that enhance user experience and engagement across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Building native and cross-platform mobile applications that deliver smooth performance and excellent user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="700">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MERN Stack</h2>
+                    <p>Developing full-stack applications using MongoDB, Express, React, and Node.js with modern architecture and best practices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-down">My Work</h1>
+            <div class="work-list">
+                <div class="work"  data-aos="flip-left" data-aos-delay="100">
+                    <img src="images/work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="flip-left" data-aos-delay="300">
+                    <img src="images/work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>A streaming platform for music lovers with personalized playlists and artist recommendations.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="flip-left" data-aos-delay="500">
+                    <img src="images/work-3.png" alt="Online Shopping">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>E-commerce platform with secure payment integration and user-friendly shopping experience.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-down">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left" data-aos="fade-right">
+                    <p><i class="fa-solid fa-paper-plane"></i> muskanmashrak654gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8521999579</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-left">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Muskan Kumari</h2>
+                <p>Full Stack Developer | MERN | Flutter | UI/UX Enthusiast</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <p class="footer-text">
+                © 2025 Muskan Kumari. All Rights Reserved. | Built with ❤️ & Passion
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(content of tablcontents) {
+                content.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        
+        menuToggle.addEventListener('change', function() {
+            if(this.checked) {
+                menu.classList.add('active');
+            } else {
+                menu.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on menu items
+        const menuItems = document.querySelectorAll('#menu li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menuToggle.checked = false;
+                menu.classList.remove('active');
+            });
+        });
+        AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+    // Add this to your existing JavaScript code
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate progress bars
+    const progressBars = document.querySelectorAll('.progress');
+    setTimeout(() => {
+        progressBars.forEach(bar => {
+            const width = bar.getAttribute('data-width');
+            bar.style.width = width + '%';
+        });
+    }, 1000);
+    
+    // Animate numbers (for stats, if you add them)
+    const animateNumbers = () => {
+        const numberElements = document.querySelectorAll('.count-number');
+        numberElements.forEach(num => {
+            const target = +num.getAttribute('data-target');
+            const count = +num.innerText;
+            const increment = target / 100;
+            
+            if (count < target) {
+                num.innerText = Math.ceil(count + increment);
+                setTimeout(animateNumbers, 30);
+            } else {
+                num.innerText = target;
+            }
+        });
+    };
+    
+    // Scroll indicator
+    window.addEventListener('scroll', () => {
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const fullHeight = document.body.scrollHeight;
+        const scrolled = (scrollPosition / (fullHeight - windowHeight)) * 100;
+        
+        if (scrollIndicator) {
+            scrollIndicator.style.width = scrolled + '%';
+        }
+    });
+});
+
+// Mouse movement parallax effect for header
+const header = document.getElementById('header');
+if (header) {
+    header.addEventListener('mousemove', (e) => {
+        const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+        const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+        
+        document.querySelector('.header-text').style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+}
+// Initialize particles
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ff004f" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ff004f",
+            opacity: 0.4,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false
+        }
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+            repulse: { distance: 100, duration: 0.4 },
+            push: { particles_nb: 4 }
+        }
+    }
+});
+    </script>
+   
+</body>
+</html>
